@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    display: flex;
+}
+.card{
+    background-color: hsl(216, 50%, 16%);
+    width: 200px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+}
+
+.logo img{
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.content a{
+    display: block;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 10px;
+   font-family: Outfit, sans-serif;
+}
+.content p{
+    font-family: Outfit, sans-serif;
+    font-size: 0.7rem;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 10px;
+ }
+.time{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    }
+.time .eth{
+    font-family: Outfit, sans-serif;
+    color: hsl(178, 100%, 50%);
+    font-size: 0.8rem;
+}
+.eth span{
+    vertical-align: top;
+}
+.days span{
+    vertical-align: super;
+}
+
+.time .days{
+    font-family: Outfit, sans-serif;
+    font-size: 0.7rem;
+    color: hsl(215, 51%, 70%);
+}
+hr{
+    border: none;
+    border-bottom: solid 1px hsl(215, 51%, 70%);
+}
+footer {
+   display: flex;
+    margin-top: 10px;
+    justify-content: flex-start;
+ }
+footer img{
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+footer span{
+    font-family: Outfit, sans-serif;
+    font-size: 0.7rem;
+    color: hsl(215, 51%, 70%);
+    margin-left: 15px;
+    margin-top: 5px;
+}
+footer a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.logo a:hover::before{
+    content: "";
+    display: block;
+    background-color: hsl(178, 100%, 50%, 50%);
+    background-repeat: no-repeat;
+    background-image: url("./images/icon-view.svg");
+    background-position: 50% 50%;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+   border-radius: 5px;
+}
+.logo{
+    position: relative;
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
